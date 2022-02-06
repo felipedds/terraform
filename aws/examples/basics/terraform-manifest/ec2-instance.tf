@@ -1,4 +1,4 @@
-// Provider Block
+// Terraform Block
 terraform {
   required_providers {
     aws = {
@@ -18,4 +18,8 @@ provider "aws" {
 resource "aws_instance" "ec2-terraform" {
   ami           = "ami-0a8b4cd432b1c3063"
   instance_type = "t2.micro"
+  user_data = file("${path.module}/app1-install.sh")
+  tags = {
+    Name = "ec2-terraform"
+  }
 }
