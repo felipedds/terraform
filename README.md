@@ -1,2 +1,2 @@
-# terraform
-Repository with some scripts in Terraform.
+# Terraform
+Repository with some examples in Terraform.
