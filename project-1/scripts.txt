@@ -1,5 +1,0 @@
-terraform plan --var-file="config/terraform.tfvars"
-
-terraform apply --var-file="config/terraform.tfvars"
-
-terraform destroy --var-file="config/terraform.tfvars"
